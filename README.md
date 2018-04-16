@@ -54,8 +54,22 @@ attention to any warnings/errors from the configure script. To compile the
 library, you will need the XRandR and X11 development packages for your
 distribution.
 
+
+  On Debian like Deepin and Ubuntu
+  --------------------------------
+    sudo apt-get install libxrandr-dev
+    sudo apt-get install libx11-dev libxinerama-dev
+    sudo apt-get install python-gi-cairo
+    git clone https://github.com/phillipberndt/fakexrandr.git
+    cd fakexrandr
+    make
+    make install
+    run fakexrandr-manage
+
+
 After installation, use the `fakexrandr-manage` tool to create a configuration (in
 `~/.config/fakexrandr.bin`).
+
 
 For **Arch Linux**, there is a [PKGBUILD](https://aur.archlinux.org/packages/fakexrandr-git/)
 ([git](https://github.com/pschmitt/aur-fakexrandr-git)) by
