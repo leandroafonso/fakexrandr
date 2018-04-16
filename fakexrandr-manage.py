@@ -32,7 +32,8 @@ import ctypes
 import os
 import struct
 import sys
-
+import gi
+gi.require_version('Gtk', '3.0')
 try:
     from gi.repository import Gtk, Gdk
     HAS_GTK=True
